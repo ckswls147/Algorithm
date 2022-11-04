@@ -1,0 +1,34 @@
+import java.util.*;
+
+class Solution {
+    static String answer[];
+    static boolean checked[];
+        public static void air(String[][] tickets, int depth){
+            if(depth != answer.length){
+                PriorityQueue<String> que = new PriorityQueue<String>();
+                String temp = answer[depth-1];
+                for(int i = 0; i < tickets.length; i++){
+                    if(temp.equals(tickets[i][0]) && checked[i] == false){
+                        que.add(tickets[i][1]);
+                    }
+                }
+                answer[depth] = que.poll();
+                for(int i = 0; i < tickets.length; i++){
+                    if(answer[depth].equals(tickets[i][1])){
+                        checked[i] = true;
+                        break;
+                    }
+                }
+            que.clear();
+            air(tickets,depth+1);        
+            }
+        }
+    public String[] solution(String[][] tickets) {
+        answer = new String[tickets.length+1];
+        checked = new boolean[tickets.length];
+        answer[0] = "ICN";
+        air(tickets,1);
+        
+        return answer;
+    }
+}
