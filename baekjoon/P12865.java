@@ -28,5 +28,4 @@ public class Main{
 		}
 		System.out.print(dp[n][k]);
 	}
-
 }
