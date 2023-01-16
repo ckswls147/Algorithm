@@ -30,6 +30,6 @@ public class P1026{
 			j--;
 		}
 		System.out.print(sum);
-		
+	
 	}
 }
