@@ -54,7 +54,6 @@ public class P1024 {
 		else
 			System.out.print(-1);
 		
-		
-	}
 
+	}
 }
