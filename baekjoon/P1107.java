@@ -59,7 +59,7 @@ public class P1107 {
 					a = i - n;
 				result = Math.min(result, a + length);
 			}
-			
+		
 		}
 		System.out.print(result);
 		
