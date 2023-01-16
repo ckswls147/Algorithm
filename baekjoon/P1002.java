@@ -34,9 +34,7 @@ public class Main {
 				}
 			
 			else
-				result[i] = 2;
-			
-			
+				result[i] = 2;		
 		}
 		for(int i = 0 ; i < n; i++) {
 			System.out.println(result[i]);
