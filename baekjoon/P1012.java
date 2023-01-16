@@ -23,8 +23,8 @@ public class P1012 {
 					dfs(dx,dy);
 				}
 		}
-
 	}
+	
 	
 	public static void main(String args[]) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
